@@ -1,0 +1,51 @@
+HTML
+<head>
+<title>Цветы</title>
+</head>
+
+<body>
+
+<h1>Виды</h1>
+<table
+border="1"
+align="center"
+rules="rows"
+style="width:60%;">
+
+ <tr>
+<td>Роза</td>
+<td>Ромашка</td>
+<td>Хризантема 3</td>
+</tr>
+
+<tr>
+<td>Тюльпаны</td>
+<td>Сухоцветы</td>
+<td>Нарцисы</td>
+</tr>
+
+
+<td>Орхидеи</td>
+<td>Маргаритки</td>
+<td>Астры</td>
+</tr>
+ 
+</table>
+
+ <input id="num1"/>
+ <p>+</p>
+ <input id="num2"/>
+ <button onclick="func()">равняется...</button>
+
+ <p id="result"></p>
+
+ <script>
+    function func(){
+          var num1 = Number(document.getElementById("num1").value);
+          var num2 = Number(document.getElementById("num2").value);
+          var result = num1 + num2;
+
+          document.getElementById("result").innerHTML = result;
+          }
+ </script>
+  </body>
